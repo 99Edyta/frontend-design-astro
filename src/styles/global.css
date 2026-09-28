@@ -9,3 +9,10 @@ h2,
 h3 {
   font-family: var(--font-cabin);
 }
+.header {
+  display: flex;
+  width: 1920px;
+  padding: 38px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
