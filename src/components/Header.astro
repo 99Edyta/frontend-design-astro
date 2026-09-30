@@ -1,11 +1,14 @@
 <header>
   <div class="head">
-    <a div class="askekspert">Ask <span class="yellow">Ekspert</span></a>
+    <div class="askekspert">
+      <a href="#">Ask <span class="yellow">Ekspert</span></a>
+    </div>
     <div class="menu">
-      <a> Home</a>
-      <a>Case Studies</a>
-      <a>Team</a>
-      <a>About</a>
+      <a href="#">Home</a>
+      <a href="#">Case Studies</a>
+      <!-- filepath: src/components/header.astro -->
+      <a href="/team">Team</a>
+      <a href="#">About</a>
     </div>
     <button> Login </button>
   </div>
@@ -20,6 +23,14 @@
     justify-content: center;
     background: var(--color-ui-primary, #030712);
     backdrop-filter: blur(10.5px);
+  }
+  .head a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .head a:hover {
+    text-decoration: underline;
+    color: #ffcc4a;
   }
   .askekspert div {
     font-family: Cabin;
@@ -50,6 +61,6 @@
     background: var(--color-on-ui-primary, #f9fafb);
   }
   .yellow {
-    color: yellow;
+    color: #ffcc4a;
   }
 </style>
