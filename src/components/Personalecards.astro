@@ -1,0 +1,161 @@
+<div class="personale">
+  <div class="line1">
+    <div class="sarah">
+      <div class="image">
+        <img src="/src/data/images/sarah.webp" />
+        <p>CEO at Company</p>
+      </div>
+      <div class="name"><h1>Sarah Jasmine</h1></div>
+      <div class="description">
+        <p>
+          Driving innovation and leadership with a focus on strategic growth and
+          impactful decisions.
+        </p>
+      </div>
+    </div>
+    <div class="john">
+      <img src="/src/data/images/john.webp" />
+      <div class="name">
+        <h1>John Carter</h1>
+        <div class="description">
+          <p>
+            Expert in operational efficiency, ensuring smooth processes and
+            exceptional team performance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="daisy">
+      <img src="/src/data/images/daisy.webp" />
+      <div class="name"><h1>Daisy Stella</h1></div>
+      <div class="description">
+        <p>
+          Inspiring creative solutions and forward-thinking approaches for
+          groundbreaking projects.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="line2">
+    <div class="maya">
+      <img src="/src/data/images/maya.webp" />
+      <div class="name"><h1>Maya Elizabeth</h1></div>
+      <div class="description">
+        <p>
+          Crafting tailored strategies to empower business success and maximize
+          market potential.
+        </p>
+      </div>
+    </div>
+    <div class="ryan">
+      <img src="/src/data/images/ryan.webp" />
+      <div class="name"><h1>Ryan Jackson</h1></div>
+      <div class="description">
+        <p>
+          Leading with vision and precision to align organizational goals with
+          long-term growth.
+        </p>
+      </div>
+    </div>
+    <div class="lilly">
+      <img src="/src/data/images/lilly.webp" />
+      <div class="name"><h1>Lilly Victoria</h1></div>
+      <div class="description">
+        <p>
+          Championing collaboration and excellence to drive meaningful change
+          and success.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .personale {
+    width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .line1,
+  .line2 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .sarah,
+  .john,
+  .daisy,
+  .maya,
+  .ryan,
+  .lilly {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .sarah img,
+  .john img,
+  .daisy img,
+  .maya img,
+  .ryan img,
+  .lilly img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .name {
+    color: #030712;
+    text-align: center;
+    font-family: Cabin;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 116%;
+  }
+
+  .name h1,
+  .name p {
+    margin: 0;
+  }
+
+  .description {
+    max-width: 300px;
+
+    color: #030712;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 147.5%;
+  }
+
+  .description p {
+    margin: 0;
+  }
+  .image p {
+    background: #030712;
+    color: white;
+    position: relative;
+    display: inline-flex;
+    padding: 4px 21px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--color-ui-primary, #030712);
+    backdrop-filter: blur(5.5px);
+  }
+</style>
