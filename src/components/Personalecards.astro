@@ -1,0 +1,228 @@
+<div class="personale">
+  <div class="line1">
+    <div class="sarah">
+      <!-- filepath: src/components/Personalecards.astro -->
+      <div class="image">
+        <a href="/team/sarah"> <img src="/src/data/images/sarah.webp" /></a>
+        <p>CEO at Company</p>
+      </div>
+      <div class="name">
+        <h1>Sarah Jasmine</h1>
+      </div>
+      <div class="description">
+        <p>
+          Driving innovation and leadership with a focus on strategic growth and
+          impactful decisions.
+        </p>
+      </div>
+      <div class="some">
+        <img src="/src/icons/facebook.svg" />
+        <img src="/src/icons/instagram.svg" />
+      </div>
+    </div>
+    <div class="john">
+      <div class="image">
+        <a href="/team/john"> <img src="/src/data/images/john.webp" /></a>
+        <p>Manager</p>
+      </div>
+      <div class="name">
+        <h1>John Carter</h1>
+        <div class="description">
+          <p>
+            Expert in operational efficiency, ensuring smooth processes and
+            exceptional team performance.
+          </p>
+        </div>
+      </div>
+      <div class="some">
+        <img src="/src/icons/facebook.svg" />
+        <img src="/src/icons/instagram.svg" />
+      </div>
+    </div>
+    <div class="daisy">
+      <div class="image">
+        <a href="/team/daisy"> <img src="/src/data/images/daisy.webp" /></a>
+        <p>Visionary</p>
+      </div>
+      <div class="name">
+        <h1>Daisy Stella</h1>
+      </div>
+      <div class="description">
+        <p>
+          Inspiring creative solutions and forward-thinking approaches for
+          groundbreaking projects.
+        </p>
+      </div>
+      <div class="some">
+        <img src="/src/icons/facebook.svg" />
+        <img src="/src/icons/instagram.svg" />
+      </div>
+    </div>
+  </div>
+  <div class="line2">
+    <div class="maya">
+      <div class="image">
+        <a href="/team/maya"> <img src="/src/data/images/maya.webp" /></a>
+        <p>Strategist</p>
+      </div>
+      <div class="name">
+        <h1>Maya Elizabeth</h1>
+      </div>
+      <div class="description">
+        <p>
+          Crafting tailored strategies to empower business success and maximize
+          market potential.
+        </p>
+      </div>
+      <div class="some">
+        <img src="/src/icons/facebook.svg" />
+        <img src="/src/icons/instagram.svg" />
+      </div>
+    </div>
+    <div class="ryan">
+      <div class="image">
+        <a href="/team/ryan"> <img src="/src/data/images/ryan.webp" /></a>
+        <p>Director</p>
+      </div>
+      <div class="name">
+        <h1>Ryan Jackson</h1>
+      </div>
+      <div class="description">
+        <p>
+          Leading with vision and precision to align organizational goals with
+          long-term growth.
+        </p>
+      </div>
+      <div class="some">
+        <img src="/src/icons/facebook.svg" />
+        <img src="/src/icons/instagram.svg" />
+      </div>
+    </div>
+    <div class="lilly">
+      <div class="image">
+        <a href="/team/lilly"> <img src="/src/data/images/lilly.webp" /></a>
+        <p>President</p>
+      </div>
+      <div class="name">
+        <h1>Lilly Victoria</h1>
+      </div>
+      <div class="description">
+        <p>
+          Championing collaboration and excellence to drive meaningful change
+          and success.
+        </p>
+      </div>
+      <div class="some">
+        <img src="/src/icons/facebook.svg" />
+        <img src="/src/icons/instagram.svg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .personale {
+    width: 1100px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .line1,
+  .line2 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .sarah,
+  .john,
+  .daisy,
+  .maya,
+  .ryan,
+  .lilly {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .sarah img,
+  .john img,
+  .daisy img,
+  .maya img,
+  .ryan img,
+  .lilly img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .name {
+    color: #030712;
+    text-align: center;
+    font-family: Cabin;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 116%;
+  }
+
+  .name h1,
+  .name p {
+    margin: 0;
+  }
+
+  .description {
+    max-width: 300px;
+
+    color: #030712;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 147.5%;
+  }
+
+  .description p {
+    margin: 0;
+  }
+  .image {
+    position: relative;
+  }
+
+  .image img {
+    display: block;
+  }
+
+  .image p {
+    position: absolute;
+    bottom: 16px;
+    left: 70%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+    background-color: #030712;
+    color: white;
+    border-radius: 20px;
+    align-items: flex-end;
+    padding: 4px 21px;
+  }
+  .some {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+  }
+  .some img {
+    width: 24.006px;
+    height: 23.101px;
+  }
+</style>
