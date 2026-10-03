@@ -1,7 +1,9 @@
 <footer>
   <div class="container">
-    <p>AskExperts</p>
-    <p>©2026 Consultalk. All rights reserved</p>
+    <a class="askekspert" href="/">
+      Ask <span class="yellow">Ekspert</span>
+    </a>
+    <p>2026 Consultalk. All rights reserved</p>
     <p>Terms of Service | Privacy Policy</p>
   </div>
 </footer>
@@ -14,8 +16,21 @@
     background: #030712;
   }
 
+  a {
+    text-decoration: none;
+    color: #ffffff;
+
+    :hover {
+      text-decoration: underline;
+      color: #ffcc4a;
+    }
+
+    span {
+      color: yellow;
+    }
+  }
+
   .container {
-    background-color: blueviolet;
     width: 60%;
     display: flex;
     justify-content: space-between;
