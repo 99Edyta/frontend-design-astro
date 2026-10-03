@@ -1,0 +1,137 @@
+<section class="donutInfo">
+  <div class="donutTxt">
+    <h3>Experience</h3>
+    <p>More than 25 years of experience</p>
+    <br />
+    <p>3000+ our clients are insured around the world</p>
+  </div>
+  <div class="stat-list">
+    <figure data-value="85">
+      <svg viewBox="0 0 100 100">
+        <circle class="track"></circle>
+        <circle class="progress" pathLength="100"></circle>
+        <circle class="marker" r="4" fill="red"></circle>
+      </svg>
+      <figcaption>Consistency</figcaption>
+    </figure>
+
+    <figure data-value="95">
+      <svg viewBox="0 0 100 100">
+        <circle class="track"></circle>
+        <circle class="progress" pathLength="100"></circle>
+        <circle class="marker" r="4" fill="red"></circle>
+      </svg>
+      <figcaption>Improvement</figcaption>
+    </figure>
+
+    <figure data-value="90">
+      <svg viewBox="0 0 100 100">
+        <circle class="track"></circle>
+        <circle class="progress" pathLength="100"></circle>
+        <circle class="marker" r="4" fill="red"></circle>
+      </svg>
+      <figcaption>Branching</figcaption>
+    </figure>
+  </div>
+</section>
+
+<style>
+  .donutInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fbc336;
+  }
+
+  .donutTxt {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    :nth-child(2) {
+      font-size: 35px;
+      font-weight: 600;
+    }
+  }
+
+  .stat-list {
+    padding: 50px;
+    min-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  figure {
+    flex: 0 1 150px;
+    min-inline-size: 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    --value: attr(data-value type(<number>));
+    --value-string: attr(data-value);
+    --value-percent: attr(data-value %);
+
+    container: circle / inline-size;
+    display: grid;
+    grid: "stack";
+    place-items: center;
+
+    &::after {
+      content: var(--value-string) "%";
+      grid-area: stack;
+      font-size: 25cqw;
+      font-weight: 600;
+    }
+  }
+  svg {
+    grid-area: stack;
+    rotate: -90deg;
+    overflow: visible;
+  }
+
+  .track,
+  .progress {
+    --stroke-width: 4;
+    cx: 50;
+    cy: 50;
+    r: calc(50 - var(--stroke-width) / 2);
+    fill: none;
+    stroke-width: var(--stroke-width);
+  }
+
+  .track {
+    stroke: #daae3c;
+  }
+
+  .progress {
+    stroke: white;
+    stroke-dasharray: 100;
+    stroke-dashoffset: calc(100 - var(--value));
+    stroke-linecap: round;
+  }
+
+  .marker {
+    r: 5;
+    fill: black;
+    stroke: white;
+    stroke-width: 2;
+    offset-path: circle(48px at 50px 50px);
+    offset-distance: var(--value-percent);
+  }
+
+  figcaption {
+    margin-block-start: 0.75rem;
+    font-size: 20px;
+  }
+</style>
