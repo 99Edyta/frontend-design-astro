@@ -1,24 +1,42 @@
-<section class="popover">
+<div id="myPopover" popover>
+  <div class="arrow"></div>
   <div class="login"><a>Dashboard Login</a></div>
   <div class="email"><a>Email address</a></div>
   <div class="emailframe"></div>
   <div class="password">Password</div>
   <div class="passwordframe"></div>
-  <button> <a class="dashboard">Go to dashboard</a></button>
-</section>
+  <button class="dashboard" popovertarget="myPopover" popovertargetaction="hide"
+    >Go to dashboard</button
+  >
+</div>
 
 <style>
-  .popover {
-    display: inline-flex;
+  #myPopover {
+    position: fixed;
+    top: 100px;
+    right: 12%;
+    left: auto;
+    bottom: auto;
+    margin: 0;
+    width: 350px;
     padding: 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 10px;
-    background: var(--color-surface-secondary, #f9fafb);
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    background: #f9fafb;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    overflow: visible;
   }
+
+  .arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -12px;
+    right: 35px;
+    transform: rotate(45deg);
+    background: #f9fafb;
+    z-index: -1;
+  }
+
   .login {
     color: #030712;
     text-align: center;
@@ -29,6 +47,7 @@
     line-height: 116%; /* 52.2px */
   }
   .email {
+    margin-top: 20px;
     color: #030712;
     font-family: Cabin;
     font-size: 18px;
@@ -49,6 +68,7 @@
     background: #fff;
   }
   .password {
+    margin-top: 20px;
     color: #030712;
     font-family: Cabin;
     font-size: 18px;
@@ -69,6 +89,8 @@
     background: #fff;
   }
   .dashboard {
+    width: 100%;
+    margin-top: 20px;
     display: flex;
     padding: 15px 56px;
     justify-content: center;
