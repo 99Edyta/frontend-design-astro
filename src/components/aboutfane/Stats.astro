@@ -1,0 +1,46 @@
+<section>
+  <div class="fotodesc">
+    <div class="casename">
+      <h1>1128+</h1>
+      <h1>908+</h1>
+      <h1>258+</h1>
+      <h1>564+</h1>
+    </div>
+    <div class="underdesc">
+      <p>succesful Work</p>
+      <p>Team member</p>
+      <p>Happy Customers</p>
+      <p>Creative Idea</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .fotodesc {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    width: 900px;
+    height: 167px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    margin: -50px auto 0;
+    max-height: 150px;
+  }
+  .casename,
+  .underdesc {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin-left: 10px;
+  }
+  .casename h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+</style>
