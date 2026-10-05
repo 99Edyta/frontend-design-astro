@@ -1,0 +1,148 @@
+<section>
+  <div class="content">
+    <div class="topbar">
+      <div class="overskrift">
+        <h3>Growing with our Clients</h3>
+      </div>
+      <div class="underbar">
+        <div class="underoverskrift">
+          <h2>Our core values & principles</h2>
+        </div>
+        <div class="description">
+          <p>
+            Capitalize on low hanging fruit to identify a ballpark value added
+            activity beta test. Override the digital divide with additional from
+            DevOps.
+          </p>
+        </div>
+      </div>
+      <button>Get in touch</button>
+    </div>
+    <div class="box">
+      <div class="box1">
+        <img src="/src/icons/layers.svg" />
+        <h4>Creative Ideas</h4>
+        <p>
+          Explore innovative strategies tailored to your goals. Unlock unique
+          solutions that inspire growth and creativity. Drive impactful change.
+        </p>
+        <h4>Read More <img src="/src/icons/arrow--right.svg" /></h4>
+      </div>
+      <div class="box1">
+        <img src="/src/icons/bars.svg" />
+        <h4>Best Features</h4>
+        <p>
+          Deliver advanced tools designed for seamless integration. Optimize
+          workflows with cutting-edge technology.
+        </p>
+        <h4>Read More <img src="/src/icons/arrow--right.svg" /></h4>
+      </div>
+      <div class="box1">
+        <img src="/src/icons/globe.svg" />
+        <h4>Experience</h4>
+        <p>
+          Leverage years of proven expertise across diverse industries. Empower
+          your business with our skilled professionals. Achieve sustainable
+          success.
+        </p>
+        <h4>Read More <img src="/src/icons/arrow--right.svg" /></h4>
+      </div>
+      <div class="box1">
+        <img src="/src/icons/gear.svg" />
+        <h4>Easy Solutions</h4>
+        <p>
+          Streamline your challenges with simple, effective solutions. Ensure
+          hassle-free implementation for measurable results.
+        </p>
+        <h4>Read More <img src="/src/icons/arrow--right.svg" /></h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .content {
+    display: flex;
+    width: 100%;
+    padding: 100px 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--color-surface-secondary, #f9fafb);
+  }
+  .topbar {
+    display: grid;
+    grid-template-columns: 588px 167px;
+    column-gap: 45px;
+    row-gap: 8px;
+    width: 800px;
+  }
+  .overskrift {
+    grid-column: 1 / -1;
+  }
+  .underoverskrift {
+    font-size: 40px;
+  }
+  .underbar {
+    display: flex;
+    width: 588px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    flex-shrink: 0;
+    grid-column: 1;
+  }
+  button {
+    display: flex;
+    width: 167px;
+    padding: 15px 34px;
+    align-items: flex-end;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: var(--color-ui-primary, #030712);
+    color: white;
+  }
+  .topbar button {
+    grid-column: 2;
+    align-self: end;
+  }
+  .box {
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    gap: 36px;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+  }
+  .box1 {
+    display: flex;
+    padding: 30px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    flex-direction: column;
+  }
+  .box1 h4 {
+    color: #030712;
+    font-family: Cabin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%;
+  }
+  .box1 h4:last-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .box1 h4:last-child img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+</style>

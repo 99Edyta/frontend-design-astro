@@ -1,0 +1,169 @@
+<section>
+  <div class="ourteam">
+    <div class="content">
+      <h4>Our team</h4>
+      <h1>We champion the bold</h1>
+      <p>
+        Our success stems from the synergy between dedicated teams and our
+        valued clients. We prioritize a company culture that fosters exceptional
+        productivity, ensures customer satisfaction.
+      </p>
+      <button>Meet the Team</button>
+    </div>
+    <div class="team">
+      <div class="sarah">
+        <img src="/src/data/images/sarah.webp" />
+        <div class="description">
+          <h1>Sarah Jasmine</h1>
+          <h3>CEO at Company</h3>
+          <p>
+            Driving innovation and leadership with a focus on strategic growth
+            and impactful decisions.
+          </p>
+        </div>
+      </div>
+      <div class="john">
+        <img src="/src/data/images/john.webp" />
+        <div class="description">
+          <h1>Sarah Jasmine</h1>
+          <h3>CEO at Company</h3>
+          <p>
+            Driving innovation and leadership with a focus on strategic growth
+            and impactful decisions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ourteam {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+  }
+  .content {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    align-self: stretch;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .content h4 {
+    color: #030712;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%; /* 23.6px */
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+  }
+  .content h1 {
+    align-self: stretch;
+    color: #030712;
+    font-family: Cabin;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116%;
+  }
+  .content p {
+    align-self: stretch;
+    color: #030712;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+  }
+  button {
+    display: flex;
+    width: 167px;
+    padding: 15px 34px 15px 22px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 42px;
+    background: var(--color-ui-primary, #030712);
+    color: white;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    justify-self: stretch;
+  }
+  .sarah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+  }
+  .john {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+  }
+  .sarah img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 256/167;
+    border-radius: 32px;
+  }
+  .john img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 256/167;
+    border-radius: 32px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    align-self: stretch;
+    width: 400px;
+  }
+  .description h1 {
+    color: #030712;
+    text-align: center;
+    font-family: Cabin;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116%;
+  }
+  .description h3 {
+    color: #030712;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+  }
+  .description p {
+    align-self: stretch;
+    color: #030712;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%;
+  }
+</style>
