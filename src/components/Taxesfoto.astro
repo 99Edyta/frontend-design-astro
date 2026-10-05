@@ -1,8 +1,13 @@
+---
+import caseimgImg from "@data/images/caseimg.webp?url";
+import storyboardImg from "@data/images/storyboard.webp?url";
+---
+
 <section>
   <div class="content">
     <div class="fotobox">
       <div class="computerfoto">
-        <img src="/src/data/images/caseimg.webp" />
+        <img src={caseimgImg} />
       </div>
       <div class="fotodesc">
         <div class="casename">
@@ -76,7 +81,7 @@
     </div>
     <div class="boardfoto">
       <div class="boardfoto-text">
-        <img src="/src/data/images/storyboard.webp" />
+        <img src={storyboardImg} />
         <div class="tekstbox">
           <p>
             Our team mapped workflows across departments to identify bottlenecks

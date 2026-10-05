@@ -1,15 +1,22 @@
+---
+import arrowLeftIcon from "@icons/arrow-left.svg?url";
+import ryanImg from "@data/images/ryan.webp?url";
+import facebookIcon from "@icons/facebook.svg?url";
+import instagramIcon from "@icons/instagram.svg?url";
+---
+
 <section>
   <button>
-    <a href="../team"><img src="/src/icons/arrow-left.svg" />Back to team</a>
+    <a href="../team"><img src={arrowLeftIcon} />Back to team</a>
   </button>
   <div class="about">
     <div class="person-image">
       <div class="greenbox">
-        <img src="/src/data/images/ryan.webp" />
+        <img src={ryanImg} />
       </div>
       <div class="some">
-        <img src="/src/icons/facebook.svg" />
-        <img src="/src/icons/instagram.svg" />
+        <img src={facebookIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
     <div class="text-content">
