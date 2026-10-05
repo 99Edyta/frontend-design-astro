@@ -2,12 +2,6 @@
 
 **Gruppemedlemmer:** Edyta Amanda Brzezinska og Richard Andersen Salcedo
 
-## Sådan bruger I filen
-
-Skriv jeres fælles refleksion direkte i denne fil. Erstat hjælpeteksterne med jeres egne erfaringer, og slet Markdown-guiden og demoen inden aflevering. Skriv kort og konkret, og brug eksempler fra jeres egen kode.
-
-Åbn forhåndsvisningen i VS Code med **Cmd + Shift + V** (Mac) eller **Ctrl + Shift + V** (Windows). Så ser I, hvordan Markdown bliver vist. På GitHub vises formateringen automatisk, når I åbner filen.
-
 ### Mini-guide til Markdown
 
 - `# Titel` er dokumentets hovedoverskrift. Brug kun én.
@@ -38,18 +32,6 @@ Reference: [Datahentning i Astro](https://docs.astro.build/en/guides/data-fetchi
 
 ---
 
-## Eksempel 1: Skriv navnet på et valgt benspænd
-
-### Hvor og hvorfor?
-
-Hvor i løsningen bruger I teknikken, og hvilket konkret problem løser den? Henvis gerne til en fil, fx `src/components/MinKomponent.astro`.
-
-### Relevant kode
-
-Indsæt en kort kodeblok fra jeres løsning. Vælg det passende sprog, og forklar den del, der er vigtig for jeres valg.
-
-### Afprøvning og ændringer
-
 ## Eksempel 1: Arbejde med Astro 
 
 Første benspænd ift. temaopgaven, var at arbejde ved brug af Astro til vores opgave.
@@ -60,10 +42,19 @@ Vores udfordring lå i at forstå hvordan opsætning foregik, samt lokalisere el
 Heldigvis, fik vi ressourcer og andre hjælpemidler gennem klassekammerater, der havde videoer til os der var bagud i forståelsen for Astro.
 Det hjalp også forståelsen for det, jo mere vi dykkede ind i bruget og arbejde med opsætningen til hjemmesiden.
 
+En del af forståelsen for Astro var også den måde man kunne tilgå forskellige undersider, istedet for bruget af den måde man er vant til. Normal vis hvis man skal til Kontaktsiden kunne man skrive feks. "pages/contact.html", men Astro har en anden tilgang til det. Til index skulle man så tilgå den med bare "/" og de andre respektive sider såsom "/taxes" osv.
 
-- **Vi testede:** Beskriv situationen, fx en smal skærm, lang tekst eller tastaturbetjening.
-- **Vi observerede:** Hvad skete der konkret?
-- **Vi ændrede eller mangler:** Hvad rettede I, eller hvad vil være næste skridt?
+Vores kodestykke til menuen:
+
+```html 
+    <div class="menu">
+      <a href="/">Home</a>
+      <a href="/taxes">Case Studies</a>
+      <!-- filepath: src/components/header.astro -->
+      <a href="/team">Team</a>
+      <a href="/about">About</a>
+    </div>
+```
 
 ## Eksempel 2: Donut Chart
 
