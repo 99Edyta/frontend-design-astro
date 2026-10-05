@@ -1,0 +1,209 @@
+<section>
+  <div class="content">
+    <div class="head">
+      <h4>FAQ</h4>
+      <h1>Customer Questions</h1>
+    </div>
+    <div class="faq">
+      <div class="question">
+        <div class="question-header">
+          <h2>What will happen when I’ve sent my application?</h2>
+          <span class="icon">+</span>
+        </div>
+
+        <p>
+          Once you’ve submitted your application, our team will review it and
+          get back to you within 3-5 business days. You will receive an email
+          confirmation, and if we need additional information, we will reach out
+          to you.
+        </p>
+      </div>
+
+      <div class="question">
+        <div class="question-header">
+          <h2>Can I get a free trial before I purchase?</h2>
+          <span class="icon">+</span>
+        </div>
+
+        <p>
+          Yes, we offer a 7-day free trial so you can explore all features
+          before making a decision. If you decide not to continue, you can
+          cancel anytime before the trial ends to avoid charges.
+        </p>
+      </div>
+
+      <div class="question">
+        <div class="question-header">
+          <h2>What should I include in my personal statement?</h2>
+          <span class="icon">+</span>
+        </div>
+
+        <p>
+          Your personal statement should include a brief introduction about
+          yourself, your skills, and why you are interested in this opportunity.
+          Make sure to highlight relevant experience and what makes you a great
+          fit.
+        </p>
+      </div>
+
+      <div class="question">
+        <div class="question-header">
+          <h2>Will membership plans be charged automatically?</h2>
+          <span class="icon">+</span>
+        </div>
+
+        <p>
+          Yes, all membership plans renew automatically on a monthly basis
+          unless you cancel before your next billing date. You can manage your
+          subscription settings from your account dashboard.
+        </p>
+      </div>
+      <div class="question">
+        <div class="question-header">
+          <h2>How can I contact customer support?</h2>
+          <span class="icon">+</span>
+        </div>
+
+        <p>
+          You can reach our support team via email at support@example.com or
+          through our live chat during business hours. We aim to respond within
+          24 hours on weekdays.
+        </p>
+      </div>
+      <div class="question">
+        <div class="question-header">
+          <h2>Do you offer refunds?</h2>
+          <span class="icon">+</span>
+        </div>
+
+        <p>
+          We offer a 14-day money-back guarantee on all our plans. If you are
+          not satisfied, you can request a full refund within this period.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const questions = document.querySelectorAll(".question");
+
+  questions.forEach((question) => {
+    question.addEventListener("click", () => {
+      question.classList.toggle("active");
+
+      const icon = question.querySelector(".icon");
+
+      if (question.classList.contains("active")) {
+        icon.textContent = "−";
+      } else {
+        icon.textContent = "+";
+      }
+    });
+  });
+</script>
+
+<style>
+  .content {
+    width: 60%;
+    display: flex;
+    padding: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 10px;
+    border-radius: 30px;
+    background: var(--color-surface-secondary, #f9fafb);
+  }
+  .head {
+    display: flex;
+    width: 478px;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+  .head h4 {
+    color: action;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%; /* 23.6px */
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+  }
+  .head h1 {
+    color: action;
+    text-align: center;
+    font-family: Cabin;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116%;
+  }
+  .faq h2 {
+    color: action;
+    font-family: Cabin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%;
+    display: flex;
+    width: 723.159px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+  }
+  .question div {
+    display: flex;
+    width: 723.159px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+  }
+  .question {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+
+  .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .question h2 {
+    margin: 0;
+    font-size: 20px;
+    width: auto;
+    flex: 1;
+  }
+
+  .question .question-header {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon {
+    font-size: 28px;
+    font-weight: 300;
+    margin-left: 20px;
+    align-items: flex-end;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+
+  .question p {
+    display: none;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+
+  .question.active p {
+    display: block;
+  }
+</style>
