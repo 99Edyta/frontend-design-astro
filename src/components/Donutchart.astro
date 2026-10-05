@@ -71,6 +71,12 @@
     gap: 2rem;
   }
 
+  @property --progress {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+
   figure {
     flex: 0 1 150px;
     min-inline-size: 0;
@@ -79,21 +85,37 @@
     margin-right: 10px;
 
     --value: attr(data-value type(<number>));
-    --value-string: attr(data-value);
-    --value-percent: attr(data-value %);
+    --progress: 0;
 
     container: circle / inline-size;
     display: grid;
     grid: "stack";
     place-items: center;
 
+    animation: fillDonut 10s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 40% entry 100%;
+
     &::after {
-      content: var(--value-string) "%";
+      counter-reset: percentage round(var(--progress));
+      content: counter(percentage) "%";
+
       grid-area: stack;
       font-size: 25cqw;
       font-weight: 600;
     }
   }
+
+  @keyframes fillDonut {
+    from {
+      --progress: 0;
+    }
+
+    to {
+      --progress: var(--value);
+    }
+  }
+
   svg {
     grid-area: stack;
     rotate: -90deg;
@@ -117,7 +139,7 @@
   .progress {
     stroke: white;
     stroke-dasharray: 100;
-    stroke-dashoffset: calc(100 - var(--value));
+    stroke-dashoffset: calc(100 - var(--progress));
     stroke-linecap: round;
   }
 
@@ -127,7 +149,7 @@
     stroke: white;
     stroke-width: 2;
     offset-path: circle(48px at 50px 50px);
-    offset-distance: var(--value-percent);
+    offset-distance: calc(var(--progress) * 1%);
   }
 
   figcaption {
