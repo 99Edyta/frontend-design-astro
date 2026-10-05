@@ -1,6 +1,6 @@
 # Refleksion – Figma til kode
 
-**Gruppemedlemmer:** Skriv begge navne her.
+**Gruppemedlemmer:** Edyta Amanda Brzezinska og Richard Andersen Salcedo
 
 ## Sådan bruger I filen
 
@@ -49,6 +49,13 @@ Hvor i løsningen bruger I teknikken, og hvilket konkret problem løser den? Hen
 Indsæt en kort kodeblok fra jeres løsning. Vælg det passende sprog, og forklar den del, der er vigtig for jeres valg.
 
 ### Afprøvning og ændringer
+
+## Eksempel 1: Arbejde med Astro 
+
+Første benspænd ift. temaopgaven, var at arbejde ved brug af Astro til vores opgave.
+
+Opstartsfasen for projektet var et benspænd for os, fordi vi ikke har haft brugt Astro eller noget frameworks før til denne opgave.
+Vores udfordring lå i at forstå hvordan opsætning foregik, samt lokalisere elementer og medier, og få siderne til at linke til hinanden. Vi forstod at hver side kunne have været bygget op i sections, som vi kunne dele op i, under components.
 
 - **Vi testede:** Beskriv situationen, fx en smal skærm, lang tekst eller tastaturbetjening.
 - **Vi observerede:** Hvad skete der konkret?
