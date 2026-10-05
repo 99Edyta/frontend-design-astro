@@ -57,11 +57,15 @@ Første benspænd ift. temaopgaven, var at arbejde ved brug af Astro til vores o
 Opstartsfasen for projektet var et benspænd for os, fordi vi ikke har haft brugt Astro eller noget frameworks før til denne opgave.
 Vores udfordring lå i at forstå hvordan opsætning foregik, samt lokalisere elementer og medier, og få siderne til at linke til hinanden. Vi forstod at hver side kunne have været bygget op i sections, som vi kunne dele op i, under components.
 
+Heldigvis, fik vi ressourcer og andre hjælpemidler gennem klassekammerater, der havde videoer til os der var bagud i forståelsen for Astro.
+Det hjalp også forståelsen for det, jo mere vi dykkede ind i bruget og arbejde med opsætningen til hjemmesiden.
+
+
 - **Vi testede:** Beskriv situationen, fx en smal skærm, lang tekst eller tastaturbetjening.
 - **Vi observerede:** Hvad skete der konkret?
 - **Vi ændrede eller mangler:** Hvad rettede I, eller hvad vil være næste skridt?
 
-## Eksempel 2: Skriv navnet på et valgt benspænd
+## Eksempel 2: Hero Section
 
 Brug samme struktur som i eksempel 1: Hvor og hvorfor? Relevant kode. Afprøvning og ændringer.
 
