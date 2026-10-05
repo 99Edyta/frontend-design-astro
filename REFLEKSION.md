@@ -65,9 +65,84 @@ Det hjalp også forståelsen for det, jo mere vi dykkede ind i bruget og arbejde
 - **Vi observerede:** Hvad skete der konkret?
 - **Vi ændrede eller mangler:** Hvad rettede I, eller hvad vil være næste skridt?
 
-## Eksempel 2: Hero Section
+## Eksempel 2: Hero Section og Donut Chart
 
-Brug samme struktur som i eksempel 1: Hvor og hvorfor? Relevant kode. Afprøvning og ændringer.
+Donut Chart uden animation
+
+```css
+  figure {
+    flex: 0 1 150px;
+    min-inline-size: 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    --value: attr(data-value type(<number>));
+    --value-string: attr(data-value);
+    --value-percent: attr(data-value %);
+
+    container: circle / inline-size;
+    display: grid;
+    grid: "stack";
+    place-items: center;
+
+    &::after {
+      content: var(--value-string) "%";
+      grid-area: stack;
+      font-size: 25cqw;
+      font-weight: 600;
+    }
+  }
+```
+
+Donut Chart med animation
+
+```css
+@property --progress {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+
+  figure {
+    flex: 0 1 150px;
+    min-inline-size: 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    --value: attr(data-value type(<number>));
+    --progress: 0;
+
+    container: circle / inline-size;
+    display: grid;
+    grid: "stack";
+    place-items: center;
+
+    animation: fillDonut 10s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 40% entry 100%;
+
+    &::after {
+      counter-reset: percentage round(var(--progress));
+      content: counter(percentage) "%";
+
+      grid-area: stack;
+      font-size: 25cqw;
+      font-weight: 600;
+    }
+  }
+
+  @keyframes fillDonut {
+    from {
+      --progress: 0;
+    }
+
+    to {
+      --progress: var(--value);
+    }
+  }
+```
 
 ## Eksempel 3: Skriv navnet på et valgt benspænd
 
