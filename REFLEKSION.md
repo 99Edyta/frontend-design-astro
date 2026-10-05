@@ -1,6 +1,6 @@
 # Refleksion – Figma til kode
 
-**Gruppemedlemmer:** Skriv begge navne her.
+**Gruppemedlemmer:** Edyta Amanda Brzezinska og Richard Andersen Salcedo
 
 ## Sådan bruger I filen
 
@@ -50,13 +50,99 @@ Indsæt en kort kodeblok fra jeres løsning. Vælg det passende sprog, og forkla
 
 ### Afprøvning og ændringer
 
+## Eksempel 1: Arbejde med Astro 
+
+Første benspænd ift. temaopgaven, var at arbejde ved brug af Astro til vores opgave.
+
+Opstartsfasen for projektet var et benspænd for os, fordi vi ikke har haft brugt Astro eller noget frameworks før til denne opgave.
+Vores udfordring lå i at forstå hvordan opsætning foregik, samt lokalisere elementer og medier, og få siderne til at linke til hinanden. Vi forstod at hver side kunne have været bygget op i sections, som vi kunne dele op i, under components.
+
+Heldigvis, fik vi ressourcer og andre hjælpemidler gennem klassekammerater, der havde videoer til os der var bagud i forståelsen for Astro.
+Det hjalp også forståelsen for det, jo mere vi dykkede ind i bruget og arbejde med opsætningen til hjemmesiden.
+
+
 - **Vi testede:** Beskriv situationen, fx en smal skærm, lang tekst eller tastaturbetjening.
 - **Vi observerede:** Hvad skete der konkret?
 - **Vi ændrede eller mangler:** Hvad rettede I, eller hvad vil være næste skridt?
 
-## Eksempel 2: Skriv navnet på et valgt benspænd
+## Eksempel 2: Hero Section og Donut Chart
 
-Brug samme struktur som i eksempel 1: Hvor og hvorfor? Relevant kode. Afprøvning og ændringer.
+Donut Chart uden animation
+
+```css
+  figure {
+    flex: 0 1 150px;
+    min-inline-size: 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    --value: attr(data-value type(<number>));
+    --value-string: attr(data-value);
+    --value-percent: attr(data-value %);
+
+    container: circle / inline-size;
+    display: grid;
+    grid: "stack";
+    place-items: center;
+
+    &::after {
+      content: var(--value-string) "%";
+      grid-area: stack;
+      font-size: 25cqw;
+      font-weight: 600;
+    }
+  }
+```
+
+Donut Chart med animation
+
+```css
+@property --progress {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+
+  figure {
+    flex: 0 1 150px;
+    min-inline-size: 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    --value: attr(data-value type(<number>));
+    --progress: 0;
+
+    container: circle / inline-size;
+    display: grid;
+    grid: "stack";
+    place-items: center;
+
+    animation: fillDonut 10s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 40% entry 100%;
+
+    &::after {
+      counter-reset: percentage round(var(--progress));
+      content: counter(percentage) "%";
+
+      grid-area: stack;
+      font-size: 25cqw;
+      font-weight: 600;
+    }
+  }
+
+  @keyframes fillDonut {
+    from {
+      --progress: 0;
+    }
+
+    to {
+      --progress: var(--value);
+    }
+  }
+```
 
 ## Eksempel 3: Skriv navnet på et valgt benspænd
 
