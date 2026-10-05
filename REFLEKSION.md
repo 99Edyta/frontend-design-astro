@@ -65,7 +65,23 @@ Det hjalp også forståelsen for det, jo mere vi dykkede ind i bruget og arbejde
 - **Vi observerede:** Hvad skete der konkret?
 - **Vi ændrede eller mangler:** Hvad rettede I, eller hvad vil være næste skridt?
 
-## Eksempel 2: Hero Section og Donut Chart
+## Eksempel 2: Donut Chart
+
+Dette benspænd er omfattet vores donut chart som vi har på index.
+Vi havde basis for vores donut chart og koden tilhørende. Det var en nem opbygning da vi havde noget statisk vi kunne vise som basis, men udfordringen var at finde frem til opbygning af animation til vores donut chart, når vi scroller ned til det eller når det vises frem på skærmen.
+
+Vi undersøgte her igennem: [animation-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline)
+
+Med animation-timeline fandt vi frem til at view() var den funktion vi skulle bruge:
+view(): [animation-timeline: view()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/view)
+
+```css
+{
+    animation: fillDonut 10s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 40% entry 100%;
+}
+```
 
 Donut Chart uden animation
 
