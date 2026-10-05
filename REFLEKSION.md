@@ -188,10 +188,9 @@ Dette må gerne indgå i de tre eksempler ovenfor. Hvis det allerede er dækket 
 
 ## Brug af AI
 
-Hvis I har brugt AI til en væsentlig del af løsningen, så beskriv kort:
+Vi har undervejs i projektet brugt AI som en form for sparringspartner i vores kodearbejde. Det har især været, når vi er stødt på metoder, CSS eller andre dele af koden, som vi ikke helt har forstået.
 
-- Hvad brugte I den til?
-- Hvad ændrede eller fravalgte I i svaret?
-- Hvad lærte I, og hvordan kontrollerede I løsningen?
+Da der har været rigtig meget ny information og mange nye ting, vi skulle lære og forholde os til, har vi nogle gange haft brug for at få tingene forklaret på en anden måde. Her har vi brugt AI til at genforklare forskellige metoder og kodestykker, så vi bedre kunne forstå, hvad de gjorde, og hvordan de kunne bruges.
 
-Hvis I ikke har brugt AI, kan I blot skrive det. I skal ikke indsætte en komplet chatlog.
+I nogle tilfælde har AI også givet eksempler på kode eller forslag til en løsning. Her har vi brugt det som hjælp til at komme videre og derefter arbejdet med koden selv. AI har altså mest været et værktøj til sparring og til at hjælpe os med de ting, vi havde svært ved at forstå.
+
