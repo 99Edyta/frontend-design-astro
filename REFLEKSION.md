@@ -68,12 +68,26 @@ Det hjalp også forståelsen for det, jo mere vi dykkede ind i bruget og arbejde
 ## Eksempel 2: Donut Chart
 
 Dette benspænd er omfattet vores donut chart som vi har på index.
-Vi havde basis for vores donut chart og koden tilhørende. Det var en nem opbygning da vi havde noget statisk vi kunne vise som basis, men udfordringen var at finde frem til opbygning af animation til vores donut chart, når vi scroller ned til det eller når det vises frem på skærmen.
+Vi havde basis for vores donut chart og koden tilhørende. Det var en nem opbygning da vi havde noget statisk vi kunne vise som basis, men udfordringen var at finde frem til opbygning af animation til vores donut chart, når vi scroller ned til det eller når det vises frem på skærmen. I første omgang havde vi en animation når man hover over vores elementer, men vi erstattede kodestykker for at få det til at fungere når vi scroller ned til sektionen.
+
+Dette kodestykke fjernede vi:
+
+```css
+{
+  transition: --progress 1s;
+  
+  &:hover {
+    --progress: var(--value);
+  }
+}
+```
 
 Vi undersøgte her igennem: [animation-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline)
 
 Med animation-timeline fandt vi frem til at view() var den funktion vi skulle bruge:
 view(): [animation-timeline: view()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation-timeline/view)
+
+Key kodestykke der havde betydning for animationen:
 
 ```css
 {
