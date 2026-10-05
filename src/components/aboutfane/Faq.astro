@@ -85,6 +85,7 @@
   </div>
 </section>
 
+<!-- filepath: src/components/aboutfane/Faq.astro -->
 <script>
   const questions = document.querySelectorAll(".question");
 
@@ -93,12 +94,9 @@
       question.classList.toggle("active");
 
       const icon = question.querySelector(".icon");
+      if (!icon) return;
 
-      if (question.classList.contains("active")) {
-        icon.textContent = "−";
-      } else {
-        icon.textContent = "+";
-      }
+      icon.textContent = question.classList.contains("active") ? "−" : "+";
     });
   });
 </script>
