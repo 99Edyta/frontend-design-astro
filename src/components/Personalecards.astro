@@ -1,9 +1,20 @@
+---
+import sarahImg from "@data/images/sarah.webp?url";
+import facebookIcon from "@icons/facebook.svg?url";
+import instagramIcon from "@icons/instagram.svg?url";
+import johnImg from "@data/images/john.webp?url";
+import daisyImg from "@data/images/daisy.webp?url";
+import mayaImg from "@data/images/maya.webp?url";
+import ryanImg from "@data/images/ryan.webp?url";
+import lillyImg from "@data/images/lilly.webp?url";
+---
+
 <div class="personale">
   <div class="line1">
     <div class="sarah">
       <!-- filepath: src/components/Personalecards.astro -->
       <div class="image">
-        <a href="/team/sarah"> <img src="/src/data/images/sarah.webp" /></a>
+        <a href="/team/sarah"> <img src={sarahImg} /></a>
         <p>CEO at Company</p>
       </div>
       <div class="name">
@@ -16,13 +27,13 @@
         </p>
       </div>
       <div class="some">
-        <img src="/src/icons/facebook.svg" />
-        <img src="/src/icons/instagram.svg" />
+        <img src={facebookIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
     <div class="john">
       <div class="image">
-        <a href="/team/john"> <img src="/src/data/images/john.webp" /></a>
+        <a href="/team/john"> <img src={johnImg} /></a>
         <p>Manager</p>
       </div>
       <div class="name">
@@ -35,13 +46,13 @@
         </div>
       </div>
       <div class="some">
-        <img src="/src/icons/facebook.svg" />
-        <img src="/src/icons/instagram.svg" />
+        <img src={facebookIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
     <div class="daisy">
       <div class="image">
-        <a href="/team/daisy"> <img src="/src/data/images/daisy.webp" /></a>
+        <a href="/team/daisy"> <img src={daisyImg} /></a>
         <p>Visionary</p>
       </div>
       <div class="name">
@@ -54,15 +65,15 @@
         </p>
       </div>
       <div class="some">
-        <img src="/src/icons/facebook.svg" />
-        <img src="/src/icons/instagram.svg" />
+        <img src={facebookIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
   </div>
   <div class="line2">
     <div class="maya">
       <div class="image">
-        <a href="/team/maya"> <img src="/src/data/images/maya.webp" /></a>
+        <a href="/team/maya"> <img src={mayaImg} /></a>
         <p>Strategist</p>
       </div>
       <div class="name">
@@ -75,13 +86,13 @@
         </p>
       </div>
       <div class="some">
-        <img src="/src/icons/facebook.svg" />
-        <img src="/src/icons/instagram.svg" />
+        <img src={facebookIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
     <div class="ryan">
       <div class="image">
-        <a href="/team/ryan"> <img src="/src/data/images/ryan.webp" /></a>
+        <a href="/team/ryan"> <img src={ryanImg} /></a>
         <p>Director</p>
       </div>
       <div class="name">
@@ -94,13 +105,13 @@
         </p>
       </div>
       <div class="some">
-        <img src="/src/icons/facebook.svg" />
-        <img src="/src/icons/instagram.svg" />
+        <img src={facebookIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
     <div class="lilly">
       <div class="image">
-        <a href="/team/lilly"> <img src="/src/data/images/lilly.webp" /></a>
+        <a href="/team/lilly"> <img src={lillyImg} /></a>
         <p>President</p>
       </div>
       <div class="name">
@@ -113,8 +124,8 @@
         </p>
       </div>
       <div class="some">
-        <img src="/src/icons/facebook.svg" />
-        <img src="/src/icons/instagram.svg" />
+        <img src={facebookIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
   </div>
