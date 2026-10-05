@@ -2,36 +2,6 @@
 
 **Gruppemedlemmer:** Edyta Amanda Brzezinska og Richard Andersen Salcedo
 
-### Mini-guide til Markdown
-
-- `# Titel` er dokumentets hovedoverskrift. Brug kun én.
-- `## Afsnit` og `### Underafsnit` giver overskrifter i flere niveauer.
-- `**vigtig tekst**` bliver til **vigtig tekst**.
-- En bindestreg efterfulgt af et mellemrum laver en punktopstilling som denne.
-- Skriv kode inde i en sætning mellem enkelte backticks, fx `getTeamMembers()`.
-- Links skrives sådan: `[Astros dokumentation](https://docs.astro.build/)`.
-- Lav et nyt afsnit med en tom linje. Brug også en tom linje før og efter lister og kodeblokke.
-
-En kodeblok starter og slutter med tre backticks. Skriv sproget efter de første, fx `js`, `css`, `html` eller `astro`. Se et eksempel i filens kildekode nedenfor.
-
-### Kort demo – sådan kan tekst, kode og link kombineres
-
-> Dette er et opdigtet eksempel på formen, ikke en færdig refleksion eller et ekstra krav.
-
-Vi flyttede datahentningen til en fælles funktion, så endpointet kun skal vedligeholdes ét sted.
-
-```js
-export function getServices() {
-  return apiFetch("https://ftk-api.pages.dev/services");
-}
-```
-
-I komponenten kalder vi `getServices()`. Vi kontrollerede, at de samme servicetitler blev vist før og efter ændringen. Næste skridt er at undersøge, hvad der sker, hvis API'et returnerer en fejl.
-
-Reference: [Datahentning i Astro](https://docs.astro.build/en/guides/data-fetching/).
-
----
-
 ## Eksempel 1: Arbejde med Astro 
 
 Første benspænd ift. temaopgaven, var at arbejde ved brug af Astro til vores opgave.
@@ -165,9 +135,13 @@ Donut Chart med animation
   }
 ```
 
-## Eksempel 3: Skriv navnet på et valgt benspænd
+## Eksempel 3: Netlify
 
-Brug samme struktur som i eksempel 1: Hvor og hvorfor? Relevant kode. Afprøvning og ændringer.
+Da Netlify, branching og GitHub stadig er ret nyt for os, har vi haft nogle udfordringer med at få det hele til at fungere helt, som vi gerne ville. Vi har blandt andet oplevet, at nogle billeder og andre medier ikke bliver loadet eller vist på siden, når den ligger på Netlify. Vi har prøvet at gå vores stier igennem flere gange, men så vidt vi kan se, burde de være rigtige.
+
+Vi har også haft problemer med vores donut chart, som virker fint, når vi kører siden lokalt på vores egne computere, men som ikke virker på Netlify. Vi har prøvet forskellige løsninger og kigget koden igennem flere gange, men vi har ikke rigtig kunne finde frem til, hvad problemet er, da selve koden ser ud til at være rigtig.
+
+Vi har derfor brugt en del tid på at prøve at finde og rette fejlene, men til sidst måtte vi lidt acceptere, at vi ikke kunne finde en løsning på det. Det er helt klart noget, vi stadig skal blive bedre til og have mere erfaring med, især når det kommer til GitHub, branching og Netlify.
 
 ## Fallback og robusthed
 
